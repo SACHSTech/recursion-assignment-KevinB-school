@@ -14,4 +14,8 @@ public class Recursion{
     return numbOfSeven + count7(n / 10);
   }
 
+  public static String pairStar(String str) {
+
+    return 0;
+  }
 }

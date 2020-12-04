@@ -11,23 +11,34 @@ public class RecursionTest{
      */
     @Test
     public void Test1(){
-        // make assertion statement(s)
-        // assertTrue(TESTBOOLEAN);
-        assertEquals(2, Recursion.count7(7170));
+      //testing base case (PS1 Method Count7)
+      // make assertion statement(s)
+      // assertTrue(TESTBOOLEAN);
+      assertEquals(2, Recursion.count7(717));
     }
 
     @Test
     public void Test2(){
-        // make assertion statement(s)
-        // assertTrue(TESTBOOLEAN);
-        assertEquals(1, Recursion.count7(70009));
+      // testing return function (PS1 Method Count7)
+      // make assertion statement(s)
+      // assertTrue(TESTBOOLEAN);
+      assertEquals(1, Recursion.count7(70009));
     }
     
     @Test
     public void Test3(){
-        // make assertion statement(s)
-        // assertTrue(TESTBOOLEAN);
-        assertEquals(0, Recursion.count7(1092834));
+      // testing 0 return (PS1 Method Count7)
+      // make assertion statement(s)
+      // assertTrue(TESTBOOLEAN);
+      assertEquals(0, Recursion.count7(1092834));
+    }
+
+    @Test
+    public void Test4(){
+      // testing 0 return (PS2 Method pairStar)
+      // make assertion statement(s)
+      // assertTrue(TESTBOOLEAN);
+      assertEquals("hel*lo", Recursion.pairStar("hello"));
     }
 
     // add more tests
