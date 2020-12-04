@@ -41,5 +41,13 @@ public class RecursionTest{
       assertEquals("l*l", Recursion.pairStar("ll"));
     }
 
+    @Test
+    public void Test5(){
+      // testing recursive case return (PS2 Method pairStar)
+      // make assertion statement(s)
+      // assertTrue(TESTBOOLEAN);
+      assertEquals("hel*lo", Recursion.pairStar("hello"));
+    }
+
     // add more tests
 }
