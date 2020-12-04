@@ -13,7 +13,7 @@ public class RecursionTest{
     public void Test1(){
         // make assertion statement(s)
         // assertTrue(TESTBOOLEAN);
-        assertEquals(2, Recursion.count7(717));
+        assertEquals(2, Recursion.count7(7170));
     }
     
     // add more tests
