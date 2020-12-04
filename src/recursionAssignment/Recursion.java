@@ -15,7 +15,11 @@ public class Recursion{
   }
 
   public static String pairStar(String str) {
+    String strFinal = "";
+    if (str.substring(0, 1).equals(str.substring(1, 2))){
+      strFinal = str.substring(0, 1) + "*" + str.substring(1, 2);
+    } 
 
-    return 0;
+    return strFinal;
   }
 }

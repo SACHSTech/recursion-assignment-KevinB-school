@@ -35,10 +35,10 @@ public class RecursionTest{
 
     @Test
     public void Test4(){
-      // testing 0 return (PS2 Method pairStar)
+      // testing simple base case return (PS2 Method pairStar)
       // make assertion statement(s)
       // assertTrue(TESTBOOLEAN);
-      assertEquals("hel*lo", Recursion.pairStar("hello"));
+      assertEquals("l*l", Recursion.pairStar("ll"));
     }
 
     // add more tests
