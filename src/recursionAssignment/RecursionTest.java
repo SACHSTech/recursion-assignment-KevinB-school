@@ -97,5 +97,13 @@ public class RecursionTest{
       assertEquals(false, Recursion.array220(new int[] {1, 2, 3, 4}, 1));
     }
 
+    @Test 
+    public void Test12(){
+      // testing recursive case return (PS2 Method pairStar)
+      // make assertion statement(s)
+      // assertTrue(TESTBOOLEAN);
+      assertEquals(false, Recursion.array220(new int[] {20, 30, 4, 8}, 2));
+    }
+
     // add more tests
 }
