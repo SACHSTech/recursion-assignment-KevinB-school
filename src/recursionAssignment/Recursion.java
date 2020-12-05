@@ -32,7 +32,8 @@ public class Recursion{
   public static String endX(String str) {
     if ((str.substring(0, 1)).equals("x")) {
       str = str.substring(1) + "x";
-    }
+      return endX(str);
+    } 
     
     //New PS2 Test 5 Red
     /*
