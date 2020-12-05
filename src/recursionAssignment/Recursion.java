@@ -28,8 +28,10 @@ public class Recursion{
   }
 
   public static boolean array220(int[] intNums, int index) {
-
-    return false;
+    if (intNums.length == 1) {
+      return false;
+    } else {
+      return true;
+    }
   }
-
 }
