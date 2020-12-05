@@ -33,6 +33,9 @@ public class Recursion{
     }  
     if (intNums[index] * 10 == intNums[index + 1]){
       return true;
+    } else if (intNums.length > index){
+      index += 1;
+      return array220(intNums, index);
     } else {
       return false;
     }
