@@ -42,7 +42,7 @@ public class RecursionTest{
       // testing simple base case return (PS2 Method pairStar)
       // make assertion statement(s)
       // assertTrue(TESTBOOLEAN);
-      assertEquals("xre", Recursion.endX("rex"));
+      assertEquals("rex", Recursion.endX("xre"));
     }
 
     //Problem Set 2
