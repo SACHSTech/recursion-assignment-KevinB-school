@@ -27,5 +27,9 @@ public class Recursion{
     }
   }
 
+  public static boolean array220(int[] intNums, int index) {
+
+    return true;
+  }
 
 }
