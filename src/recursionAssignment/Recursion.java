@@ -15,27 +15,17 @@ public class Recursion{
   }
 
   public static String pairStar(String str) {
-    String strFinal = "";
+    
+    if (str.length() == 1 || str.equals("")) {
+      return str;
+    }
 
-      if ((str.length() >= 2) && (str.substring(0, 1).equals(str.substring(1, 2)))){
-        strFinal = str.substring(0, 1) + "*" + str.substring(1, 2);
-        str = str.substring(2, str.length());
-        if (str.length() > 0) {
-          return strFinal + pairStar(str);
-        } else {
-          return strFinal;
-        }
-      } else if (str.length() != 0) {
-        if (str.length() == 1) {
-          strFinal = str.substring(0, 1);
-          return strFinal;
-        } else {
-          strFinal = str.substring(0, 1);
-          str = str.substring(1, str.length());
-          return strFinal + pairStar(str);
-        }
-      }
-
-      return strFinal + pairStar(str);
+    if (str.charAt(0) == str.charAt(1)) {
+      return str.charAt(0) + "*" + pairStar(str.substring(1));
+    } else {
+      return str.charAt(0) + pairStar(str.substring(1));
+    }
   }
+
+
 }
