@@ -28,7 +28,7 @@ public class Recursion{
   }
 
   public static boolean array220(int[] intNums, int index) {
-    if (intNums.length == 1) {
+    if ((intNums.length - index) <= 1) {
       return false;
     }  
     if (intNums[index] * 10 == intNums[index + 1]){
