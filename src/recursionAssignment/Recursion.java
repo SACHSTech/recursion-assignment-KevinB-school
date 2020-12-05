@@ -30,8 +30,11 @@ public class Recursion{
   public static boolean array220(int[] intNums, int index) {
     if (intNums.length == 1) {
       return false;
-    } else {
+    }  
+    if (intNums[index] * 10 == intNums[index + 1]){
       return true;
+    } else {
+      return false;
     }
   }
 }
