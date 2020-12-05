@@ -31,7 +31,7 @@ public class Recursion{
     if (intNums.length == 1) {
       return false;
     } else {
-      return true;
+      return false;
     }
   }
 }
