@@ -34,7 +34,7 @@ public class Recursion{
       str = str.substring(1) + "x";
     }
     
-    //New PS2 Test 2 Red
+    //New PS2 Test 5 Red
     /*
     if (str.length() == 1 || str.equals("")) {
       return str;

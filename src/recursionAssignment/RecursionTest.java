@@ -51,7 +51,7 @@ public class RecursionTest{
       // testing recursive case return (PS2 Method pairStar)
       // make assertion statement(s)
       // assertTrue(TESTBOOLEAN);
-      //assertEquals("hel*lo", Recursion.endX("hello"));
+      assertEquals("rexx", Recursion.endX("xxre"));
     }
 
     //Problem Set 2
