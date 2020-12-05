@@ -29,8 +29,9 @@ public class Recursion{
   * @param 
   * @return 
   */
-  public static String pairStar(String str) {
+  public static String endX(String str) {
     
+    /*
     if (str.length() == 1 || str.equals("")) {
       return str;
     }
@@ -40,6 +41,8 @@ public class Recursion{
     } else {
       return str.charAt(0) + pairStar(str.substring(1));
     }
+    */
+    return str;
   }
 
 
