@@ -30,13 +30,15 @@ public class Recursion{
   * @return String that is the str inputed but it has all the x's at the end
   */
   public static String endX(String str) {
-    if ((str.substring(0, 1)).equals("x")) {
-      return endX(str.substring(1)) + "x";
-    } else if ((!(str.substring(0, 1)).equals("x")) && (str.length() > 3)) {
-      return str.substring(0, 1) + endX(str.substring(1));
+    if (str.length() == 0) {
+      return str;
     }
 
-    return str;
+    if ((str.substring(0, 1)).equals("x")) {
+      return endX(str.substring(1)) + "x";
+    } else {
+      return str.substring(0, 1) + endX(str.substring(1));
+    }
   }
 
 
