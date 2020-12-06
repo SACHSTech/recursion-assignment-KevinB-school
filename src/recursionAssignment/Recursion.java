@@ -24,29 +24,18 @@ public class Recursion{
 
 
   /**
-  * Computes 
+  * Computes a string where all the x's in it get moved to the end of the string
   *
-  * @param 
-  * @return 
+  * @param str  The given string
+  * @return String that is the str inputed but it has all the x's at the end
   */
   public static String endX(String str) {
     if ((str.substring(0, 1)).equals("x")) {
-      str = str.substring(1) + "x";
-      return endX(str);
-    } 
-    
-    //New PS2 Test 5 Red
-    /*
-    if (str.length() == 1 || str.equals("")) {
-      return str;
+      return endX(str.substring(1)) + "x";
+    } else if ((!(str.substring(0, 1)).equals("x")) && (str.length() > 2)) {
+      return str.substring(0, 1) + endX(str.substring(1));
     }
 
-    if (str.charAt(0) == str.charAt(1)) {
-      return str.charAt(0) + "*" + pairStar(str.substring(1));
-    } else {
-      return str.charAt(0) + pairStar(str.substring(1));
-    }
-    */
     return str;
   }
 
