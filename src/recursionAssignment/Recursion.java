@@ -32,7 +32,7 @@ public class Recursion{
   public static String endX(String str) {
     if ((str.substring(0, 1)).equals("x")) {
       return endX(str.substring(1)) + "x";
-    } else if ((!(str.substring(0, 1)).equals("x")) && (str.length() > 2)) {
+    } else if ((!(str.substring(0, 1)).equals("x")) && (str.length() > 3)) {
       return str.substring(0, 1) + endX(str.substring(1));
     }
 
