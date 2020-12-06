@@ -15,10 +15,12 @@ public class Recursion{
     if ((n % 10) == 7) {
       numbOfSeven += 1;
     } else if (n / 10 == 0) {
-      return numbOfSeven;
+      // base case
+      return numbOfSeven; 
     }
 
-    return numbOfSeven + count7(n / 10);
+    // recursive case
+    return numbOfSeven + count7(n / 10); 
   }
 
 
@@ -31,12 +33,15 @@ public class Recursion{
   */
   public static String endX(String str) {
     if (str.length() == 0) {
+      // base case
       return str;
     }
 
     if ((str.substring(0, 1)).equals("x")) {
-      return endX(str.substring(1)) + "x";
+      // recursive case
+      return endX(str.substring(1)) + "x"; 
     } else {
+      // recursive case
       return str.substring(0, 1) + endX(str.substring(1));
     }
   }
@@ -52,15 +57,19 @@ public class Recursion{
   */
   public static boolean array220(int[] intNums, int index) {
     if ((intNums.length - index) <= 1) {
+      // base case
       return false;
     }  
     
     if (intNums[index] * 10 == intNums[index + 1]){
-      return true;
+      // base case
+      return true; 
     } else if (intNums.length > index){
       index += 1;
+      // recursive case
       return array220(intNums, index);
     } else {
+      // base case
       return false;
     }
   }
