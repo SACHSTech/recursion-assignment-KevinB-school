@@ -1,6 +1,6 @@
 package recursionAssignment;
 
-public class Recursion{
+public class Recursion {
 
   /**
   * Computes how many times the digit 7 is in the number given
@@ -14,7 +14,7 @@ public class Recursion{
 
     if ((n % 10) == 7) {
       numbOfSeven += 1;
-    } else if (n / 10 == 0) {
+    } else if ((n / 10) == 0) {
       // base case
       return numbOfSeven; 
     }
@@ -61,10 +61,10 @@ public class Recursion{
       return false;
     }  
     
-    if (intNums[index] * 10 == intNums[index + 1]){
+    if ((intNums[index] * 10) == intNums[index + 1]) {
       // base case
       return true; 
-    } else if (intNums.length > index){
+    } else if (intNums.length > index) {
       index += 1;
       // recursive case
       return array220(intNums, index);
