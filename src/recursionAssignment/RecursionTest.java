@@ -1,34 +1,105 @@
 package recursionAssignment;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Before;
-import org.junit.jupiter.api.After;
 
 import recursionAssignment.Recursion;
 
 public class RecursionTest{
     
-    @Before
-    public void beforeTest(){
-      // some steps to perform before tests are run
+    /**
+    * Problem Set 1 testing base case
+    */
+    @Test
+    public void Test1(){
+      assertEquals(1, Recursion.count7(70009));
+    }
+
+    /**
+    * Problem Set 1 testing recursive case
+    */
+    @Test
+    public void Test2(){
+      assertEquals(2, Recursion.count7(717));
     }
     
     /**
-     * An initial test
-     */
+    * Problem Set 1 testing 0 return
+    */
     @Test
-    public void Test1(){
-        // make assertion statement(s)
-        // assertEquals(EXPECTEDVALUE, TESTVALUE);
-        // assertTrue(TESTBOOLEAN);
+    public void Test3(){
+      assertEquals(0, Recursion.count7(1092834));
     }
-    
-    // add more tests
-    
-    @After
-    public void afterTest(){
-      // some steps to perform after tests are run
+
+    /**
+    * Problem Set 2 testing base case
+    */
+    @Test
+    public void Test4(){
+      assertEquals("rex", Recursion.endX("xre"));
     }
-    
-    
+
+    /**
+    * Problem Set 2 testing recursive case
+    */
+    @Test
+    public void Test5(){
+      assertEquals("rexx", Recursion.endX("xxre"));
+    }
+
+    /**
+    * Problem Set 2 testing scond recursive case
+    */
+    @Test
+    public void Test6(){
+      assertEquals("hihixxx", Recursion.endX("xhixhix"));
+    }
+
+    /**
+    * Problem Set 2 testing recursive case
+    */
+    @Test
+    public void Test7(){
+      assertEquals("hixxxx", Recursion.endX("xxhixx"));
+    }
+
+    /**
+    * Problem Set 3 testing first base case
+    */
+    @Test 
+    public void Test8(){
+      assertEquals(false, Recursion.array220(new int[] {3}, 0));
+    }
+
+    /**
+    * Problem Set 3 testing second base case
+    */
+    @Test 
+    public void Test9(){
+      assertEquals(true, Recursion.array220(new int[] {3, 30}, 0));
+    }
+
+    /**
+    * Problem Set 3 testing recursive case
+    */
+    @Test 
+    public void Test10(){
+      assertEquals(true, Recursion.array220(new int[] {1, 2, 20}, 0));
+    }
+
+    /**
+    * Problem Set 3 testing no case
+    */
+    @Test 
+    public void Test11(){
+      assertEquals(false, Recursion.array220(new int[] {1, 2, 3, 4}, 1));
+    }
+
+    /**
+    * Problem Set 3 testing no case
+    */
+    @Test 
+    public void Test12(){
+      assertEquals(false, Recursion.array220(new int[] {20, 30, 4, 8}, 2));
+    }
+
 }
